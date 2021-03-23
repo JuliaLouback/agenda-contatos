@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Uni Agenda</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-primary bg-gradient">
+	  <div class="container-fluid">
+	    <a class="navbar-brand text-light" href="#">Agenda de Contatos</a>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row p-4">
+			<div class="col-4">
+				<h3 class="text-primary">Cadastro de Contatos</h3>
+			
+				<form name="formContato" action="Controller" method="GET" class="mt-4">
+					<input type="hidden" name="acao" value="Cadastrar">
+					<div class="mb-3">
+					  <label for="nome" class="form-label">Nome</label>				
+					  <input type="text" class="form-control" id="nome" name="nome">
+					</div>
+					<div class="mb-3">
+					  <label for="telefone" class="form-label">Telefone</label>
+					  <input type="tel" class="form-control" id="telefone" name="telefone">
+					</div>
+					<div class="mb-3">
+					  <label for="email" class="form-label">E-mail</label>
+					  <input type="email" class="form-control" id="email" name="email">
+					</div>
+					<input type="submit" class="btn btn-primary" value="Cadastrar">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
